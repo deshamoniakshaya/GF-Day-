@@ -1,0 +1,406 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(
+    135deg,
+    #f8f4ef,
+    #fdf8f6,
+    #fffdfb);
+
+    overflow:hidden;
+    height:100vh;
+}
+
+/* Every Page */
+
+.page{
+
+    position:absolute;
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:1s ease;
+
+    padding:30px;
+
+}
+
+.page.active{
+
+    opacity:1;
+    visibility:visible;
+
+}
+
+/* Glass Card */
+
+.card{
+
+    width:720px;
+    max-width:92%;
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    border-radius:28px;
+
+    padding:55px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.08);
+
+}
+
+/* Envelope */
+
+.envelope{
+
+    width:420px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:45px;
+
+    box-shadow:
+
+    0 18px 45px rgba(0,0,0,.10);
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.letter h1{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:64px;
+
+    color:#c9978a;
+
+}
+
+.letter h2{
+
+    margin-top:10px;
+
+    font-weight:500;
+
+    color:#555;
+
+}
+
+.letter p{
+
+    margin:30px 0;
+
+    color:#777;
+
+    line-height:1.8;
+
+}
+
+/* Main Heading */
+
+.card h1{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:60px;
+
+    color:#bf8c82;
+
+    margin-bottom:15px;
+
+}
+
+.card h2{
+
+    margin-top:30px;
+
+    color:#5d5d5d;
+
+    font-weight:500;
+
+}
+
+.card h3{
+
+    font-weight:300;
+
+    line-height:1.8;
+
+    color:#666;
+
+    margin-top:18px;
+
+}
+
+.card p{
+
+    line-height:2;
+
+    color:#666;
+
+    font-size:17px;
+
+}
+
+.forever{
+
+    margin-top:25px;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:42px;
+
+    color:#bf8c82;
+
+}
+/* Buttons */
+
+button{
+
+    margin-top:30px;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#c9978a;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:
+    0 10px 20px rgba(201,151,138,.25);
+
+}
+
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    background:#b78378;
+
+}
+
+
+/* Video Page */
+
+.video-card{
+
+    width:750px;
+
+    max-width:92%;
+
+    background:rgba(255,255,255,.6);
+
+    backdrop-filter:blur(15px);
+
+    padding:35px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.1);
+
+}
+
+
+.video-card video{
+
+    width:100%;
+
+    max-height:450px;
+
+    border-radius:20px;
+
+}
+
+
+.video-caption{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    color:#666;
+
+}
+
+
+/* Floating Animation */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* Floating Petals */
+
+.petals::before,
+.petals::after{
+
+    content:"♡ ♡ ♡ ♡ ♡";
+
+    position:absolute;
+
+    width:100%;
+
+    top:-50px;
+
+    left:0;
+
+    text-align:center;
+
+    font-size:35px;
+
+    color:#e7b8b0;
+
+    animation:fall 12s linear infinite;
+
+}
+
+
+.petals::after{
+
+    animation-delay:6s;
+
+}
+
+
+@keyframes fall{
+
+    0%{
+
+        transform:translateY(-50px);
+
+        opacity:0;
+
+    }
+
+
+    20%{
+
+        opacity:1;
+
+    }
+
+
+    100%{
+
+        transform:translateY(100vh);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:600px){
+
+
+.card{
+
+    padding:30px;
+
+}
+
+
+.card h1{
+
+    font-size:45px;
+
+}
+
+
+.letter h1{
+
+    font-size:50px;
+
+}
+
+
+.card p{
+
+    font-size:15px;
+
+}
+
+
+.envelope{
+
+    width:90%;
+
+}
+
+
+}

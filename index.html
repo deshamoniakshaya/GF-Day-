@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Girlfriend's Day 🤍</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3.mpeg" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Petals -->
+    <div class="petals"></div>
+
+    <!-- Opening Envelope -->
+    <section id="intro" class="page active">
+
+        <div class="envelope">
+
+            <div class="letter">
+
+                <h1>For</h1>
+
+                <h2>Mary & Vaishnavi 🤍</h2>
+
+                <p>
+                    A little letter,
+                    filled with memories,
+                    laughter and love.
+                </p>
+
+                <button onclick="openLetter()">
+                    Open
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Page 1 -->
+
+    <section id="page1" class="page">
+
+        <div class="card">
+
+            <h1>Happy Girlfriend's Day</h1>
+
+            <h3>
+                To the ones who have always been there,
+                and who I know always will be.
+            </h3>
+
+            <h2>Mary & Vaishnavi</h2>
+
+            <p class="forever">
+                Always & Forever.
+            </p>
+
+            <button onclick="nextPage(2)">
+                ❀
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Page 2 -->
+
+    <section id="page2" class="page">
+
+        <div class="card">
+
+            <p>
+
+                Some people come and go,
+                but some become a part of your life
+                in a way that time can't change.
+
+                <br><br>
+
+                Thank you for every laugh,
+                every memory,
+                every conversation,
+                and every moment we've shared.
+
+                <br><br>
+
+                Here's to us,
+                to our friendship,
+                and to all the memories
+                still waiting to be made.
+
+            </p>
+
+            <button onclick="nextPage(3)">
+                ❀
+            </button>
+
+        </div>
+
+    </section>
+        <!-- Page 3 -->
+
+    <section id="page3" class="page">
+
+        <div class="card">
+
+            <p>
+
+                Some friendships become home.
+
+                <br><br>
+
+                Here's to our endless 24-hour FaceTime calls,
+                late-night study sessions that somehow turned into talking for hours,
+                laughing until we couldn't breathe,
+                sharing every little update,
+                being there through every high and every low,
+                making the simplest moments unforgettable,
+                and creating memories we'll always look back on with a smile.
+
+                <br><br>
+
+                Thank you for being my safe place,
+                my biggest supporters,
+                and the people I can always count on. ♡
+
+            </p>
+
+            <button onclick="nextPage(4)">
+                ❀
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Page 4 (Video) -->
+
+    <section id="page4" class="page">
+
+        <div class="video-card">
+
+            <video controls playsinline>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <p class="video-caption">
+                One of the many memories we'll always laugh about. 🤍
+            </p>
+
+            <button onclick="nextPage(5)">
+                Finish
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Final Page -->
+
+    <section id="page5" class="page">
+
+        <div class="card">
+
+            <h1>Happy Girlfriend's Day 🤍</h1>
+
+            <p>
+
+                Here's to countless more memories,
+                more laughter,
+                more 24-hour FaceTime calls,
+                more study sessions that somehow become gossip sessions,
+                and many more years of friendship.
+
+                <br><br>
+
+                Thank you for being such an important part of my life.
+
+            </p>
+
+            <h2 class="signature">
+                Made with love from Akshaya. ♡
+            </h2>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
